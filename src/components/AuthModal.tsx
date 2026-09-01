@@ -230,6 +230,33 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   </>
                 )}
               </button>
+
+              {/* Quick Sign-In Credential Helpers */}
+              <div className="pt-3 border-t border-slate-100 space-y-1.5">
+                <p className="text-[11px] font-semibold text-slate-400">Quick Test Credentials:</p>
+                <div className="flex flex-wrap gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSignInEmail('admin@velora.com');
+                      setSignInPassword('admin');
+                    }}
+                    className="text-[11px] py-1 px-2.5 rounded-lg bg-amber-50 text-amber-900 border border-amber-200/80 hover:bg-amber-100 font-medium transition-colors cursor-pointer"
+                  >
+                    👑 Admin (admin@velora.com)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSignInEmail('tanvir.h@gmail.com');
+                      setSignInPassword('user');
+                    }}
+                    className="text-[11px] py-1 px-2.5 rounded-lg bg-slate-100 text-slate-800 border border-slate-200 hover:bg-slate-200 font-medium transition-colors cursor-pointer"
+                  >
+                    🛍️ Customer (tanvir.h@gmail.com)
+                  </button>
+                </div>
+              </div>
             </form>
           ) : (
             <form onSubmit={handleSignUp} className="space-y-3.5">

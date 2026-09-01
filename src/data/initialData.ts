@@ -1502,3 +1502,4 @@ export const INITIAL_ORDERS: Order[] = [
     createdAt: '2026-08-31T14:45:00.000Z',
   },
 ];
+

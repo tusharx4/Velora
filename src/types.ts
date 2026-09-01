@@ -108,6 +108,10 @@ export interface UserAccount {
   isPrimaryAdmin?: boolean;
 }
 
+export interface StoredUser extends UserAccount {
+  password?: string;
+}
+
 export interface AuthSession {
   user: UserAccount;
   token: string;
