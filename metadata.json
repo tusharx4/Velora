@@ -1,0 +1,6 @@
+{
+  "name": "VELORA — Luxury Boutique & Admin Suite",
+  "description": "Luxury boutique shopping across Bangladesh with WhatsApp ordering, cash on delivery, rich catalog management, order tracking, and a comprehensive admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": {
+    "User": {
+      "collection": "users",
+      "fields": {
+        "id": { "type": "string", "description": "User ID" },
+        "name": { "type": "string", "description": "Full Name" },
+        "email": { "type": "string", "description": "Email address" },
+        "phone": { "type": "string", "description": "Phone number" },
+        "role": { "type": "string", "description": "Role: admin | moderator | customer" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      }
+    },
+    "Order": {
+      "collection": "orders",
+      "fields": {
+        "id": { "type": "string", "description": "Order number / ID" },
+        "customer": { "type": "object", "description": "Customer contact details" },
+        "items": { "type": "array", "description": "Ordered cart items" },
+        "subtotal": { "type": "number", "description": "Items subtotal" },
+        "shippingFee": { "type": "number", "description": "Delivery fee" },
+        "total": { "type": "number", "description": "Grand total" },
+        "deliveryZone": { "type": "string", "description": "Delivery zone" },
+        "paymentMethod": { "type": "string", "description": "Payment method" },
+        "status": { "type": "string", "description": "Order lifecycle status" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      }
+    },
+    "ChatMessage": {
+      "collection": "chats",
+      "fields": {
+        "id": { "type": "string", "description": "Chat session ID" },
+        "userId": { "type": "string", "description": "User or Guest ID" },
+        "userName": { "type": "string", "description": "User name" },
+        "userEmail": { "type": "string", "description": "User email" },
+        "lastMessage": { "type": "string", "description": "Latest message text" },
+        "updatedAt": { "type": "string", "description": "ISO timestamp" }
+      }
+    },
+    "Inquiry": {
+      "collection": "inquiries",
+      "fields": {
+        "name": { "type": "string", "description": "Customer name" },
+        "phone": { "type": "string", "description": "Phone number" },
+        "subject": { "type": "string", "description": "Inquiry topic" },
+        "message": { "type": "string", "description": "Message content" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      }
+    },
+    "Review": {
+      "collection": "reviews",
+      "fields": {
+        "productId": { "type": "string", "description": "Product ID" },
+        "userName": { "type": "string", "description": "Customer reviewer name" },
+        "rating": { "type": "number", "description": "Star rating 1 to 5" },
+        "comment": { "type": "string", "description": "Review text" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      }
+    },
+    "Product": {
+      "collection": "products",
+      "fields": {
+        "id": { "type": "string", "description": "Product ID" },
+        "name": { "type": "string", "description": "Product Name" },
+        "price": { "type": "number", "description": "Regular Price" },
+        "category": { "type": "string", "description": "Category Slug" }
+      }
+    },
+    "Category": {
+      "collection": "categories",
+      "fields": {
+        "id": { "type": "string", "description": "Category ID" },
+        "name": { "type": "string", "description": "Category Name" }
+      }
+    },
+    "Banner": {
+      "collection": "banners",
+      "fields": {
+        "id": { "type": "string", "description": "Banner ID" },
+        "title": { "type": "string", "description": "Banner title" }
+      }
+    },
+    "Settings": {
+      "collection": "settings",
+      "fields": {
+        "storeName": { "type": "string", "description": "Store name" }
+      }
+    }
+  }
+}
